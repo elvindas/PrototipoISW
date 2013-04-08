@@ -1,0 +1,12 @@
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\bin\Debug\appPrototipoISW.exe
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\bin\Debug\appPrototipoISW.pdb
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Properties.Resources.resources
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.csproj.GenerateResource.Cache
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.exe
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.pdb
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Loging.resources
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmAsignarPlan.resources
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmPlanes.resources
+c:\users\elnier\documents\visual studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmPrincipal.resources
+C:\Users\Elnier\Documents\Visual Studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.csprojResolveAssemblyReference.cache
+C:\Users\Elnier\Documents\Visual Studio 2012\Projects\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmAnimales.resources
