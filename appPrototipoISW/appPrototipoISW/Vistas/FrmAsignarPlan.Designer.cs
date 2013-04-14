@@ -29,19 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAsignarPlan));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Info = new System.Windows.Forms.Label();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Calendario = new System.Windows.Forms.MonthCalendar();
-            this.BtnAceptar = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.CmbTipo = new System.Windows.Forms.ComboBox();
-            this.CmbRegion = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.GridAtractivo = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,19 +46,22 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GridActividad = new System.Windows.Forms.DataGridView();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button1 = new System.Windows.Forms.Button();
             this.btnFiltrar = new System.Windows.Forms.Button();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridAtractivo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridActividad)).BeginInit();
@@ -95,18 +95,6 @@
             this.Calendario.TabIndex = 72;
             this.Calendario.TodayDate = new System.DateTime(2012, 3, 14, 0, 0, 0, 0);
             // 
-            // BtnAceptar
-            // 
-            this.BtnAceptar.BackColor = System.Drawing.Color.White;
-            this.BtnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAceptar.Image")));
-            this.BtnAceptar.Location = new System.Drawing.Point(27, 143);
-            this.BtnAceptar.Name = "BtnAceptar";
-            this.BtnAceptar.Size = new System.Drawing.Size(105, 56);
-            this.BtnAceptar.TabIndex = 71;
-            this.BtnAceptar.Text = "Asignar Plan";
-            this.BtnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAceptar.UseVisualStyleBackColor = false;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(659, 5);
@@ -115,8 +103,7 @@
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
             this.richTextBox1.Size = new System.Drawing.Size(287, 275);
             this.richTextBox1.TabIndex = 69;
-            this.richTextBox1.Text = "Codigo del Animal             02\nCodigo del Plan                001\n-------------" +
-    "----------------------------------------------------------";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // label5
             // 
@@ -138,24 +125,6 @@
             this.label3.TabIndex = 67;
             this.label3.Text = "Plan de Vacunas";
             // 
-            // CmbTipo
-            // 
-            this.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbTipo.FormattingEnabled = true;
-            this.CmbTipo.Location = new System.Drawing.Point(12, 36);
-            this.CmbTipo.Name = "CmbTipo";
-            this.CmbTipo.Size = new System.Drawing.Size(146, 21);
-            this.CmbTipo.TabIndex = 63;
-            // 
-            // CmbRegion
-            // 
-            this.CmbRegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbRegion.FormattingEnabled = true;
-            this.CmbRegion.Location = new System.Drawing.Point(12, 104);
-            this.CmbRegion.Name = "CmbRegion";
-            this.CmbRegion.Size = new System.Drawing.Size(146, 21);
-            this.CmbRegion.TabIndex = 62;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -167,9 +136,9 @@
             // 
             // GridAtractivo
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridAtractivo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridAtractivo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.GridAtractivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GridAtractivo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GridAtractivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -181,9 +150,9 @@
             this.GridAtractivo.Location = new System.Drawing.Point(12, 236);
             this.GridAtractivo.Name = "GridAtractivo";
             this.GridAtractivo.ReadOnly = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridAtractivo.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridAtractivo.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.GridAtractivo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridAtractivo.Size = new System.Drawing.Size(635, 135);
             this.GridAtractivo.TabIndex = 59;
@@ -222,9 +191,9 @@
             // 
             // GridActividad
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.GridActividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridActividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridActividad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -241,12 +210,63 @@
             this.GridActividad.Location = new System.Drawing.Point(12, 407);
             this.GridActividad.Name = "GridActividad";
             this.GridActividad.ReadOnly = true;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.GridActividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridActividad.Size = new System.Drawing.Size(635, 121);
             this.GridActividad.TabIndex = 58;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "id_actividad";
+            this.Column4.HeaderText = "Codigo";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.ToolTipText = "adasd";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "tipo";
+            this.Column3.HeaderText = "Nombre";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "nombre";
+            this.Column1.HeaderText = "Raza";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "region";
+            this.Column2.HeaderText = "Codigo del Padre";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Codigo de la Madre";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Genero";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Feha de Nacimiento";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             // 
             // label2
             // 
@@ -273,71 +293,21 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 56);
             this.button1.TabIndex = 77;
-            this.button1.Text = "Asignar Plan por Fecha";
+            this.button1.Text = "Asignar Plan";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnFiltrar
             // 
             this.btnFiltrar.Image = ((System.Drawing.Image)(resources.GetObject("btnFiltrar.Image")));
-            this.btnFiltrar.Location = new System.Drawing.Point(234, 185);
+            this.btnFiltrar.Location = new System.Drawing.Point(220, 174);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(106, 42);
+            this.btnFiltrar.Size = new System.Drawing.Size(159, 56);
             this.btnFiltrar.TabIndex = 78;
             this.btnFiltrar.Text = "Filtrar por Fecha";
             this.btnFiltrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFiltrar.UseVisualStyleBackColor = true;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Feha de Nacimiento";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Genero";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Codigo de la Madre";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.DataPropertyName = "region";
-            this.Column2.HeaderText = "Codigo del Padre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "nombre";
-            this.Column1.HeaderText = "Raza";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.DataPropertyName = "tipo";
-            this.Column3.HeaderText = "Nombre";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.DataPropertyName = "id_actividad";
-            this.Column4.HeaderText = "Codigo";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.ToolTipText = "adasd";
             // 
             // button2
             // 
@@ -362,12 +332,41 @@
             this.BtnCancelar.Text = "Borrar";
             this.BtnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(27, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(132, 20);
+            this.textBox1.TabIndex = 81;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(27, 104);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(132, 20);
+            this.textBox2.TabIndex = 82;
+            // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(42, 141);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(103, 37);
+            this.button3.TabIndex = 83;
+            this.button3.Text = "Buscar";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // FrmAsignarPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 552);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.btnFiltrar);
@@ -376,12 +375,9 @@
             this.Controls.Add(this.Info);
             this.Controls.Add(this.PictureBox1);
             this.Controls.Add(this.Calendario);
-            this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.CmbTipo);
-            this.Controls.Add(this.CmbRegion);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.GridAtractivo);
@@ -401,12 +397,9 @@
         private System.Windows.Forms.Label Info;
         internal System.Windows.Forms.PictureBox PictureBox1;
         private System.Windows.Forms.MonthCalendar Calendario;
-        private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox CmbTipo;
-        private System.Windows.Forms.ComboBox CmbRegion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView GridAtractivo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -427,6 +420,9 @@
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button3;
 
 
     }
