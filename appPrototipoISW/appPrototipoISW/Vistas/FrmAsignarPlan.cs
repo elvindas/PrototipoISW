@@ -28,7 +28,7 @@ namespace appPrototipoISW.Vistas
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            //richTextBox1.Text.Remove(
+            richTextBox1.Clear();
         }
     }
 }
