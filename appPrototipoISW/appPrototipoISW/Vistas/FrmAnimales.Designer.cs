@@ -38,20 +38,13 @@
             this.btnRefrescar = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.GridActividad = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.BoxActividad = new System.Windows.Forms.GroupBox();
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.padre = new System.Windows.Forms.MaskedTextBox();
+            this.madre = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -149,14 +142,6 @@
             this.GridActividad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GridActividad.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.GridActividad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridActividad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4,
-            this.Column3,
-            this.Column1,
-            this.Column2,
-            this.Column8,
-            this.Column10,
-            this.Column9});
             this.GridActividad.Location = new System.Drawing.Point(7, 95);
             this.GridActividad.Name = "GridActividad";
             this.GridActividad.ReadOnly = true;
@@ -166,57 +151,6 @@
             this.GridActividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridActividad.Size = new System.Drawing.Size(635, 121);
             this.GridActividad.TabIndex = 69;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.DataPropertyName = "id_actividad";
-            this.Column4.HeaderText = "Codigo";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.ToolTipText = "adasd";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.DataPropertyName = "tipo";
-            this.Column3.HeaderText = "Nombre";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "nombre";
-            this.Column1.HeaderText = "Raza";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.DataPropertyName = "region";
-            this.Column2.HeaderText = "Codigo del Padre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Codigo de la Madre";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Genero";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Feha de Nacimiento";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
             // 
             // label7
             // 
@@ -250,8 +184,8 @@
             this.BoxActividad.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BoxActividad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BoxActividad.BackgroundImage")));
             this.BoxActividad.Controls.Add(this.dtpDesde);
-            this.BoxActividad.Controls.Add(this.maskedTextBox2);
-            this.BoxActividad.Controls.Add(this.maskedTextBox1);
+            this.BoxActividad.Controls.Add(this.padre);
+            this.BoxActividad.Controls.Add(this.madre);
             this.BoxActividad.Controls.Add(this.label8);
             this.BoxActividad.Controls.Add(this.label6);
             this.BoxActividad.Controls.Add(this.label5);
@@ -284,21 +218,21 @@
             this.dtpDesde.TabIndex = 76;
             this.dtpDesde.Value = new System.DateTime(2012, 3, 13, 0, 0, 0, 0);
             // 
-            // maskedTextBox2
+            // padre
             // 
-            this.maskedTextBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.maskedTextBox2.Location = new System.Drawing.Point(348, 177);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(140, 20);
-            this.maskedTextBox2.TabIndex = 54;
+            this.padre.BackColor = System.Drawing.SystemColors.Control;
+            this.padre.Location = new System.Drawing.Point(348, 177);
+            this.padre.Name = "padre";
+            this.padre.Size = new System.Drawing.Size(140, 20);
+            this.padre.TabIndex = 54;
             // 
-            // maskedTextBox1
+            // madre
             // 
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.maskedTextBox1.Location = new System.Drawing.Point(348, 136);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(140, 20);
-            this.maskedTextBox1.TabIndex = 53;
+            this.madre.BackColor = System.Drawing.SystemColors.Control;
+            this.madre.Location = new System.Drawing.Point(348, 136);
+            this.madre.Name = "madre";
+            this.madre.Size = new System.Drawing.Size(140, 20);
+            this.madre.TabIndex = 53;
             // 
             // label8
             // 
@@ -479,19 +413,12 @@
         private System.Windows.Forms.ToolStripButton btnRefrescar;
         private System.Windows.Forms.ToolStripButton btnSalir;
         private System.Windows.Forms.DataGridView GridActividad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.GroupBox BoxActividad;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox padre;
+        private System.Windows.Forms.MaskedTextBox madre;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
