@@ -15,6 +15,9 @@ namespace appPrototipoISW.Vistas
         public FrmPrincipal()
         {
             InitializeComponent();
+            CmbTipo.Items.Add("Emicina");
+            CmbTipo.Items.Add("Baymec");
+            CmbTipo.Items.Add("Paracitol");
         }
 
         private void tablasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -22,11 +25,6 @@ namespace appPrototipoISW.Vistas
 
         }
 
-        private void BtnCambiar_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Se ha Aplicado el Plan", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
 
         private void agendaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -49,7 +47,28 @@ namespace appPrototipoISW.Vistas
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Se ha Registrado Correctamente", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            textBox4.Text = "";
+            groupBox3.Visible = false;
+            button3.Enabled = false;
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.checkBox1.Checked)
+                this.groupBox2.Visible = true;
+            else this.groupBox2.Visible = false;
+        }
+
+        private void BtnCambiar_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha Aplicado el Plan", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            groupBox3.Visible = true;
+            button3.Enabled = true;
         }
     }
 }

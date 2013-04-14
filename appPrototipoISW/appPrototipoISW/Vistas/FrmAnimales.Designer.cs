@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnimales));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tollEmpleados = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
@@ -49,23 +49,23 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.BoxActividad = new System.Windows.Forms.GroupBox();
-            this.CmbTipo = new System.Windows.Forms.ComboBox();
+            this.dtpDesde = new System.Windows.Forms.DateTimePicker();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.CmbGenero = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtCodigo = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.CmbRegion = new System.Windows.Forms.ComboBox();
+            this.CmbRaza = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.MaskedTextBox();
             this.BtnCambiar = new System.Windows.Forms.Button();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.tollEmpleados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridActividad)).BeginInit();
             this.BoxActividad.SuspendLayout();
@@ -141,9 +141,9 @@
             // 
             // GridActividad
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.GridActividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridActividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridActividad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -160,9 +160,9 @@
             this.GridActividad.Location = new System.Drawing.Point(7, 95);
             this.GridActividad.Name = "GridActividad";
             this.GridActividad.ReadOnly = true;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.GridActividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridActividad.Size = new System.Drawing.Size(635, 121);
             this.GridActividad.TabIndex = 69;
@@ -255,11 +255,11 @@
             this.BoxActividad.Controls.Add(this.label8);
             this.BoxActividad.Controls.Add(this.label6);
             this.BoxActividad.Controls.Add(this.label5);
-            this.BoxActividad.Controls.Add(this.CmbTipo);
+            this.BoxActividad.Controls.Add(this.CmbGenero);
             this.BoxActividad.Controls.Add(this.label3);
             this.BoxActividad.Controls.Add(this.TxtCodigo);
             this.BoxActividad.Controls.Add(this.label2);
-            this.BoxActividad.Controls.Add(this.CmbRegion);
+            this.BoxActividad.Controls.Add(this.CmbRaza);
             this.BoxActividad.Controls.Add(this.label1);
             this.BoxActividad.Controls.Add(this.TxtNombre);
             this.BoxActividad.Controls.Add(this.BtnCambiar);
@@ -275,15 +275,70 @@
             this.BoxActividad.TabStop = false;
             this.BoxActividad.Text = "Actividad";
             // 
-            // CmbTipo
+            // dtpDesde
             // 
-            this.CmbTipo.BackColor = System.Drawing.SystemColors.Control;
-            this.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbTipo.FormattingEnabled = true;
-            this.CmbTipo.Location = new System.Drawing.Point(82, 182);
-            this.CmbTipo.Name = "CmbTipo";
-            this.CmbTipo.Size = new System.Drawing.Size(140, 21);
-            this.CmbTipo.TabIndex = 49;
+            this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDesde.Location = new System.Drawing.Point(283, 55);
+            this.dtpDesde.Name = "dtpDesde";
+            this.dtpDesde.Size = new System.Drawing.Size(160, 20);
+            this.dtpDesde.TabIndex = 76;
+            this.dtpDesde.Value = new System.DateTime(2012, 3, 13, 0, 0, 0, 0);
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.maskedTextBox2.Location = new System.Drawing.Point(348, 177);
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(140, 20);
+            this.maskedTextBox2.TabIndex = 54;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.maskedTextBox1.Location = new System.Drawing.Point(348, 136);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(140, 20);
+            this.maskedTextBox1.TabIndex = 53;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(312, 35);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(108, 13);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "Fecha de Nacimiento";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(15, 185);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "Genero";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(254, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.TabIndex = 50;
+            this.label5.Text = "Codigo Madre";
+            // 
+            // CmbGenero
+            // 
+            this.CmbGenero.BackColor = System.Drawing.SystemColors.Control;
+            this.CmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbGenero.FormattingEnabled = true;
+            this.CmbGenero.Location = new System.Drawing.Point(82, 182);
+            this.CmbGenero.Name = "CmbGenero";
+            this.CmbGenero.Size = new System.Drawing.Size(140, 21);
+            this.CmbGenero.TabIndex = 49;
             // 
             // label3
             // 
@@ -313,15 +368,16 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Codigo";
             // 
-            // CmbRegion
+            // CmbRaza
             // 
-            this.CmbRegion.BackColor = System.Drawing.SystemColors.Control;
-            this.CmbRegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbRegion.FormattingEnabled = true;
-            this.CmbRegion.Location = new System.Drawing.Point(82, 132);
-            this.CmbRegion.Name = "CmbRegion";
-            this.CmbRegion.Size = new System.Drawing.Size(140, 21);
-            this.CmbRegion.TabIndex = 44;
+            this.CmbRaza.BackColor = System.Drawing.SystemColors.Control;
+            this.CmbRaza.DisplayMember = "1";
+            this.CmbRaza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbRaza.FormattingEnabled = true;
+            this.CmbRaza.Location = new System.Drawing.Point(82, 132);
+            this.CmbRaza.Name = "CmbRaza";
+            this.CmbRaza.Size = new System.Drawing.Size(140, 21);
+            this.CmbRaza.TabIndex = 44;
             // 
             // label1
             // 
@@ -391,61 +447,6 @@
             this.label4.TabIndex = 31;
             this.label4.Text = "Nombre";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(254, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
-            this.label5.TabIndex = 50;
-            this.label5.Text = "Codigo Madre";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(15, 185);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
-            this.label6.TabIndex = 51;
-            this.label6.Text = "Genero";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(312, 35);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 13);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "Fecha de Nacimiento";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.maskedTextBox1.Location = new System.Drawing.Point(348, 136);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(140, 20);
-            this.maskedTextBox1.TabIndex = 53;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.maskedTextBox2.Location = new System.Drawing.Point(348, 177);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(140, 20);
-            this.maskedTextBox2.TabIndex = 54;
-            // 
-            // dtpDesde
-            // 
-            this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDesde.Location = new System.Drawing.Point(283, 55);
-            this.dtpDesde.Name = "dtpDesde";
-            this.dtpDesde.Size = new System.Drawing.Size(160, 20);
-            this.dtpDesde.TabIndex = 76;
-            this.dtpDesde.Value = new System.DateTime(2012, 3, 13, 0, 0, 0, 0);
-            // 
             // FrmAnimales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,11 +495,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox CmbTipo;
+        private System.Windows.Forms.ComboBox CmbGenero;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox TxtCodigo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox CmbRegion;
+        private System.Windows.Forms.ComboBox CmbRaza;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox TxtNombre;
         private System.Windows.Forms.Button BtnCambiar;

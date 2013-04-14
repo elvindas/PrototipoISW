@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registraNacimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,17 +47,16 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.BoxAgenda = new System.Windows.Forms.GroupBox();
             this.BtnCambiar = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.GridAtractivo = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,9 +71,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.CmbTipo = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.GridActividad = new System.Windows.Forms.DataGridView();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,14 +87,15 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.BoxAgenda.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridAtractivo)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridActividad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,17 +217,10 @@
             // 
             this.BoxAgenda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BoxAgenda.BackgroundImage")));
             this.BoxAgenda.Controls.Add(this.BtnCambiar);
-            this.BoxAgenda.Controls.Add(this.textBox3);
-            this.BoxAgenda.Controls.Add(this.label6);
-            this.BoxAgenda.Controls.Add(this.button2);
-            this.BoxAgenda.Controls.Add(this.textBox2);
-            this.BoxAgenda.Controls.Add(this.label5);
-            this.BoxAgenda.Controls.Add(this.button1);
+            this.BoxAgenda.Controls.Add(this.groupBox2);
+            this.BoxAgenda.Controls.Add(this.checkBox1);
             this.BoxAgenda.Controls.Add(this.dateTimePicker1);
             this.BoxAgenda.Controls.Add(this.dtpDesde);
-            this.BoxAgenda.Controls.Add(this.textBox1);
-            this.BoxAgenda.Controls.Add(this.label2);
-            this.BoxAgenda.Controls.Add(this.BtnBuscar);
             this.BoxAgenda.Controls.Add(this.label1);
             this.BoxAgenda.Controls.Add(this.GridAtractivo);
             this.BoxAgenda.Controls.Add(this.btnFiltrar);
@@ -245,68 +238,95 @@
             // 
             this.BtnCambiar.BackColor = System.Drawing.SystemColors.Control;
             this.BtnCambiar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCambiar.Image")));
-            this.BtnCambiar.Location = new System.Drawing.Point(338, 252);
+            this.BtnCambiar.Location = new System.Drawing.Point(343, 252);
             this.BtnCambiar.Name = "BtnCambiar";
             this.BtnCambiar.Size = new System.Drawing.Size(249, 51);
-            this.BtnCambiar.TabIndex = 83;
+            this.BtnCambiar.TabIndex = 93;
             this.BtnCambiar.Text = "Aplicar Plan a la Selección";
             this.BtnCambiar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.BtnCambiar.UseVisualStyleBackColor = false;
-            this.BtnCambiar.Click += new System.EventHandler(this.BtnCambiar_Click);
+            this.BtnCambiar.Click += new System.EventHandler(this.BtnCambiar_Click_1);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(338, 49);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(269, 197);
+            this.groupBox2.TabIndex = 85;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Avanzadas";
+            this.groupBox2.Visible = false;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(441, 187);
+            this.textBox3.Location = new System.Drawing.Point(61, 171);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(140, 20);
-            this.textBox3.TabIndex = 82;
+            this.textBox3.TabIndex = 92;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(438, 166);
+            this.label6.Location = new System.Drawing.Point(58, 150);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(149, 18);
-            this.label6.TabIndex = 81;
+            this.label6.TabIndex = 91;
             this.label6.Text = "Codigo del  Animal";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(329, 166);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 44);
-            this.button2.TabIndex = 80;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(441, 124);
+            this.textBox2.Location = new System.Drawing.Point(61, 108);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 79;
+            this.textBox2.TabIndex = 89;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(438, 103);
+            this.label5.Location = new System.Drawing.Point(58, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(150, 18);
-            this.label5.TabIndex = 78;
+            this.label5.TabIndex = 88;
             this.label5.Text = "Codigo de  Vacuna";
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.Location = new System.Drawing.Point(329, 103);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 44);
-            this.button1.TabIndex = 77;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(61, 39);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(140, 20);
+            this.textBox1.TabIndex = 86;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(58, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 18);
+            this.label2.TabIndex = 85;
+            this.label2.Text = "Codigo del  Plan";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(338, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(125, 17);
+            this.checkBox1.TabIndex = 84;
+            this.checkBox1.Text = "Busqueda Avanzada";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // dateTimePicker1
             // 
@@ -326,33 +346,6 @@
             this.dtpDesde.TabIndex = 75;
             this.dtpDesde.Value = new System.DateTime(2012, 3, 13, 0, 0, 0, 0);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(441, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
-            this.textBox1.TabIndex = 74;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(438, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 18);
-            this.label2.TabIndex = 73;
-            this.label2.Text = "Codigo del  Plan";
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Location = new System.Drawing.Point(329, 34);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(106, 44);
-            this.BtnBuscar.TabIndex = 72;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -366,9 +359,9 @@
             // 
             // GridAtractivo
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridAtractivo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridAtractivo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.GridAtractivo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GridAtractivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridAtractivo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -383,9 +376,9 @@
             this.GridAtractivo.Location = new System.Drawing.Point(3, 309);
             this.GridAtractivo.Name = "GridAtractivo";
             this.GridAtractivo.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridAtractivo.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridAtractivo.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.GridAtractivo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridAtractivo.Size = new System.Drawing.Size(625, 157);
             this.GridAtractivo.TabIndex = 68;
@@ -450,7 +443,7 @@
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(229, 42);
             this.btnFiltrar.TabIndex = 54;
-            this.btnFiltrar.Text = "Filtrar Plan Por Fecha";
+            this.btnFiltrar.Text = "Filtrar Plan ";
             this.btnFiltrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFiltrar.UseVisualStyleBackColor = true;
             // 
@@ -488,16 +481,13 @@
             // groupBox1
             // 
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Controls.Add(this.CmbTipo);
+            this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.GridActividad);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
@@ -506,31 +496,36 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Aplicar Inyectables";
             // 
-            // label9
+            // groupBox3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(421, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(116, 13);
-            this.label9.TabIndex = 88;
-            this.label9.Text = "Historial de Inyectables";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(360, 26);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(233, 188);
-            this.richTextBox1.TabIndex = 87;
-            this.richTextBox1.Text = "";
+            this.groupBox3.Controls.Add(this.CmbTipo);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Location = new System.Drawing.Point(146, 148);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(285, 100);
+            this.groupBox3.TabIndex = 87;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Visible = false;
             // 
             // CmbTipo
             // 
             this.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbTipo.FormattingEnabled = true;
-            this.CmbTipo.Location = new System.Drawing.Point(139, 49);
+            this.CmbTipo.Location = new System.Drawing.Point(114, 42);
             this.CmbTipo.Name = "CmbTipo";
             this.CmbTipo.Size = new System.Drawing.Size(147, 21);
             this.CmbTipo.TabIndex = 86;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(30, 45);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 18);
+            this.label8.TabIndex = 78;
+            this.label8.Text = "Vacuna";
             // 
             // label10
             // 
@@ -544,9 +539,9 @@
             // 
             // GridActividad
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.GridActividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridActividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridActividad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -564,9 +559,9 @@
             this.GridActividad.Location = new System.Drawing.Point(3, 304);
             this.GridActividad.Name = "GridActividad";
             this.GridActividad.ReadOnly = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.GridActividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridActividad.Size = new System.Drawing.Size(629, 166);
             this.GridActividad.TabIndex = 84;
@@ -625,8 +620,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.Enabled = false;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(360, 234);
+            this.button3.Location = new System.Drawing.Point(350, 57);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(233, 51);
             this.button3.TabIndex = 83;
@@ -637,7 +633,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(146, 161);
+            this.textBox4.Location = new System.Drawing.Point(146, 78);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(140, 20);
             this.textBox4.TabIndex = 82;
@@ -647,7 +643,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(143, 140);
+            this.label7.Location = new System.Drawing.Point(143, 57);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(149, 18);
             this.label7.TabIndex = 81;
@@ -655,23 +651,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(17, 137);
+            this.button4.Location = new System.Drawing.Point(17, 54);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(106, 44);
             this.button4.TabIndex = 80;
             this.button4.Text = "Buscar";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(14, 49);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 18);
-            this.label8.TabIndex = 78;
-            this.label8.Text = "Vacuna";
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FrmPrincipal
             // 
@@ -688,10 +674,14 @@
             this.tabPage2.ResumeLayout(false);
             this.BoxAgenda.ResumeLayout(false);
             this.BoxAgenda.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridAtractivo)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridActividad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -717,20 +707,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView GridAtractivo;
-        private System.Windows.Forms.Button BtnCambiar;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dtpDesde;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -753,8 +733,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox CmbTipo;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button BtnCambiar;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

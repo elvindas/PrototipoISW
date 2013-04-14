@@ -15,6 +15,11 @@ namespace appPrototipoISW.Vistas
         public FrmAnimales()
         {
             InitializeComponent();
+            CmbGenero.Items.Add("Macho");
+            CmbGenero.Items.Add("Embra");
+            CmbRaza.Items.Add("Holstein");
+            CmbRaza.Items.Add("Jersey");
+            CmbRaza.Items.Add("Pardo Suizo");
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -49,9 +54,9 @@ namespace appPrototipoISW.Vistas
             MessageBox.Show("Insertó Dato con exito", "Inserta Dato", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.BoxActividad.Enabled = false;
             this.TxtCodigo.Text = "";
-            this.CmbRegion.Text = "";
+            this.CmbRaza.Text = "";
             this.TxtNombre.Text = "";
-            this.CmbTipo.Text = "";
+            this.CmbGenero.Text = "";
             tollEmpleados.Enabled = true;
 
         }
@@ -60,9 +65,9 @@ namespace appPrototipoISW.Vistas
         {
             this.BoxActividad.Enabled = false;
             this.TxtCodigo.Text = "";
-            this.CmbRegion.Text = "";
+            this.CmbRaza.Text = "";
             this.TxtNombre.Text = "";
-            this.CmbTipo.Text = "";
+            this.CmbGenero.Text = "";
             tollEmpleados.Enabled = true;
 
         }
@@ -72,9 +77,9 @@ namespace appPrototipoISW.Vistas
             MessageBox.Show("Edito Dato con exito", "Editar Dato", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.BoxActividad.Enabled = false;
             this.TxtCodigo.Text = "";
-            this.CmbRegion.Text = "";
+            this.CmbRaza.Text = "";
             this.TxtNombre.Text = "";
-            this.CmbTipo.Text = "";
+            this.CmbGenero.Text = "";
             tollEmpleados.Enabled = true;
         }
     }
