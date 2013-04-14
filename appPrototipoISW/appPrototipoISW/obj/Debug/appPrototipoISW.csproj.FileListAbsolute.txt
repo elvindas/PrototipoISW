@@ -14,7 +14,6 @@ C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\ob
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.pdb
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\bin\Debug\appPrototipoISW.exe
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\bin\Debug\appPrototipoISW.pdb
-C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.csprojResolveAssemblyReference.cache
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Properties.Resources.resources
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmAnimales.resources
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmAsignarPlan.resources

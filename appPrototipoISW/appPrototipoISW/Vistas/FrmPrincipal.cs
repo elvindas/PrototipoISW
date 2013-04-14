@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.DataTable;
 
 namespace appPrototipoISW.Vistas
 {
@@ -52,8 +51,6 @@ namespace appPrototipoISW.Vistas
             textBox4.Text = "";
             groupBox3.Visible = false;
             button3.Enabled = false;
-            GridAtractivo.DataSource.Table.Rows.Clear();
-            GridAtractivo.Refresh();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
