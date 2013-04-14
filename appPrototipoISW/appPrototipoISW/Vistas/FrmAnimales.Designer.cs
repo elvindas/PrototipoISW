@@ -392,7 +392,9 @@
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.GridActividad);
             this.Controls.Add(this.tollEmpleados);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAnimales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmAnimales";
             this.tollEmpleados.ResumeLayout(false);
             this.tollEmpleados.PerformLayout();

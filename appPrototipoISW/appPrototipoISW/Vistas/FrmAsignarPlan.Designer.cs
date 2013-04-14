@@ -277,6 +277,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.GridAtractivo);
             this.Controls.Add(this.GridActividad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAsignarPlan";
             this.Text = "FrmAsignarPlan";
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
