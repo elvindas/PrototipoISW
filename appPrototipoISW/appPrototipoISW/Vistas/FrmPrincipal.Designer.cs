@@ -118,8 +118,8 @@
             // 
             this.registraNacimientoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("registraNacimientoToolStripMenuItem.Image")));
             this.registraNacimientoToolStripMenuItem.Name = "registraNacimientoToolStripMenuItem";
-            this.registraNacimientoToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
-            this.registraNacimientoToolStripMenuItem.Text = "Registrar Nacimiento";
+            this.registraNacimientoToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.registraNacimientoToolStripMenuItem.Text = "Registro Animal";
             this.registraNacimientoToolStripMenuItem.Click += new System.EventHandler(this.registraNacimientoToolStripMenuItem_Click);
             // 
             // agendaToolStripMenuItem
