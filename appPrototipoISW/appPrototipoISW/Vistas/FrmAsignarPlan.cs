@@ -28,7 +28,25 @@ namespace appPrototipoISW.Vistas
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            richTextBox1.Clear();
+            if (i > 0)
+            {
+                richTextBox1.Text = richTextBox1.Text.Replace("\nCodigo del Animal             0" + i + " \n" + "Codigo del Plan                001 \n" + "-----------------------------------------------------------------------", "");
+                i -= 1;
+            }
+            else MessageBox.Show("No hay datos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (i > 0)
+            {
+                MessageBox.Show("Se ha Registrado Correctamente", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                richTextBox1.Clear();
+                i = 0;
+            }
+            else MessageBox.Show("No hay datos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            
         }
     }
 }

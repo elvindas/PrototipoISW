@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAsignarPlan));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Info = new System.Windows.Forms.Label();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.Calendario = new System.Windows.Forms.MonthCalendar();
@@ -103,7 +103,7 @@
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
             this.richTextBox1.Size = new System.Drawing.Size(287, 275);
             this.richTextBox1.TabIndex = 69;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Text = "";
             // 
             // label5
             // 
@@ -136,9 +136,9 @@
             // 
             // GridAtractivo
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridAtractivo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridAtractivo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.GridAtractivo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GridAtractivo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.GridAtractivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -150,9 +150,9 @@
             this.GridAtractivo.Location = new System.Drawing.Point(12, 236);
             this.GridAtractivo.Name = "GridAtractivo";
             this.GridAtractivo.ReadOnly = true;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridAtractivo.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridAtractivo.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.GridAtractivo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridAtractivo.Size = new System.Drawing.Size(635, 135);
             this.GridAtractivo.TabIndex = 59;
@@ -191,9 +191,9 @@
             // 
             // GridActividad
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.GridActividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridActividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridActividad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -210,9 +210,9 @@
             this.GridActividad.Location = new System.Drawing.Point(12, 407);
             this.GridActividad.Name = "GridActividad";
             this.GridActividad.ReadOnly = true;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.GridActividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridActividad.Size = new System.Drawing.Size(635, 121);
             this.GridActividad.TabIndex = 58;
@@ -320,6 +320,7 @@
             this.button2.Text = "Guardar Plan";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // BtnCancelar
             // 
