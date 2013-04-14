@@ -46,7 +46,6 @@ namespace appPrototipoISW.Vistas
                 i = 0;
             }
             else MessageBox.Show("No hay datos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            
         }
     }
 }
