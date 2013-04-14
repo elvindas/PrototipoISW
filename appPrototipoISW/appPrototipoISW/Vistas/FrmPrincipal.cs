@@ -82,7 +82,7 @@ namespace appPrototipoISW.Vistas
             //Aqui es cuando hacemos uso de la variable renglon, la inicializamos diciendole que va a ser un nuevo renglon de la Tabla que es de tipo DataTable 
             Renglon2 = Tabla2.NewRow();
             //Aqui simplemente le agregamos el renglon nuevo con los valores que nosotros querramos, para hacer referencia a cada columna podemos utilizar los indices de cada columna 
-            Renglon2[0] = "015";
+            Renglon2[0] = "001";
             Renglon2[1] = "Lorenso";
             Renglon2[2] = "Pardo Suizo";
             Renglon2[3] = "Macho";
@@ -111,7 +111,7 @@ namespace appPrototipoISW.Vistas
             //Aqui es cuando hacemos uso de la variable renglon, la inicializamos diciendole que va a ser un nuevo renglon de la Tabla que es de tipo DataTable 
             Renglon = Tabla.NewRow();
             //Aqui simplemente le agregamos el renglon nuevo con los valores que nosotros querramos, para hacer referencia a cada columna podemos utilizar los indices de cada columna 
-            Renglon[0] = "015";
+            Renglon[0] = "002";
             Renglon[1] = "056";
             Renglon[2] = "012";
             Renglon[3] = "Desparasitante";
@@ -123,6 +123,12 @@ namespace appPrototipoISW.Vistas
             //Aqui le decimos al dataGridView que tome la tabla y la muestre y Fin 
             GridAtractivo.DataSource = Tabla;
 
+        }
+
+        private void historialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHistorial hist = new FrmHistorial();
+            hist.ShowDialog();
         }
     }
 }

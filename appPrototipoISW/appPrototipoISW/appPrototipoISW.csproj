@@ -56,6 +56,12 @@
     <Compile Include="Vistas\FrmAsignarPlan.Designer.cs">
       <DependentUpon>FrmAsignarPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\FrmHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmHistorial.Designer.cs">
+      <DependentUpon>FrmHistorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\FrmIngresar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmAsignarPlan.resx">
       <DependentUpon>FrmAsignarPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmHistorial.resx">
+      <DependentUpon>FrmHistorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmIngresar.resx">
       <DependentUpon>FrmIngresar.cs</DependentUpon>

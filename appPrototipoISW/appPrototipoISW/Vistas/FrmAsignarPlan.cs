@@ -85,7 +85,7 @@ namespace appPrototipoISW.Vistas
             //Aqui es cuando hacemos uso de la variable renglon, la inicializamos diciendole que va a ser un nuevo renglon de la Tabla que es de tipo DataTable 
             Renglon = Tabla.NewRow();
             //Aqui simplemente le agregamos el renglon nuevo con los valores que nosotros querramos, para hacer referencia a cada columna podemos utilizar los indices de cada columna 
-            Renglon[0] = "001";
+            Renglon[0] = "002";
             Renglon[1] = "001";
             Renglon[2] = "Desparasitante";
             Renglon[3] = "2 cm /kg";
