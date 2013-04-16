@@ -120,6 +120,7 @@
             this.btnRefrescar.Size = new System.Drawing.Size(59, 51);
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnSalir
             // 

@@ -72,6 +72,8 @@ namespace appPrototipoISW.Vistas
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
+            ((DataTable)GridActividad.DataSource).Rows.Clear();
+
             MessageBox.Show("Se ha borrado el Dato con exito", "Borrar Dato", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -128,6 +130,35 @@ namespace appPrototipoISW.Vistas
             madre.Text = null;
             padre.Text = null;
             dtpDesde.Text = null;
+        }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            DataTable Tabla2 = new DataTable(); //Declaramos una variable de tipo DataTable y a su vez la inicializamos para usarla mas tarde. 
+            DataRow Renglon2;//Esta variable de tipo DataRow solo la declaramos y mas adelante la utilizaremos para agregarsela al dataTable que ya declaramos arriba 
+            //Le agregamos columnas a la variable Tabla que es de tipo DataTable 
+            Tabla2.Columns.Add(new DataColumn("Codigo Animal"));
+            Tabla2.Columns.Add(new DataColumn("Nombre"));
+            Tabla2.Columns.Add(new DataColumn("Raza"));
+            Tabla2.Columns.Add(new DataColumn("Genero"));
+            Tabla2.Columns.Add(new DataColumn("Codigo Padre"));
+            Tabla2.Columns.Add(new DataColumn("Codigo Madre"));
+            Tabla2.Columns.Add(new DataColumn("Fecha Nacimiento"));
+            //Aqui es cuando hacemos uso de la variable renglon, la inicializamos diciendole que va a ser un nuevo renglon de la Tabla que es de tipo DataTable 
+            Renglon2 = Tabla2.NewRow();
+            //Aqui simplemente le agregamos el renglon nuevo con los valores que nosotros querramos, para hacer referencia a cada columna podemos utilizar los indices de cada columna 
+            Renglon2[0] = "01";
+            Renglon2[1] = "Lorenso";
+            Renglon2[2] = "Pardo Suizo";
+            Renglon2[3] = "Macho";
+            Renglon2[4] = "120";
+            Renglon2[5] = "026";
+            Renglon2[6] = "1/04/2013";
+            //Aqui simplemente le agregamos el renglon nuevo a la tabla 
+            Tabla2.Rows.Add(Renglon2);
+            //Aqui le decimos al dataGridView que tome la tabla y la muestre y Fin 
+            GridActividad.DataSource = Tabla2;
+
         }
     }
 }

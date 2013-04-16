@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsuarios));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tollEmpleados = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
@@ -121,6 +121,7 @@
             this.btnRefrescar.Size = new System.Drawing.Size(59, 51);
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnSalir
             // 
@@ -227,9 +228,9 @@
             // 
             // GridActividad
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.LightSlateGray;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.GridActividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridActividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GridActividad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -239,9 +240,9 @@
             this.GridActividad.Location = new System.Drawing.Point(0, 54);
             this.GridActividad.Name = "GridActividad";
             this.GridActividad.ReadOnly = true;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Black;
-            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Black;
+            this.GridActividad.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.GridActividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridActividad.Size = new System.Drawing.Size(649, 207);
             this.GridActividad.TabIndex = 91;

@@ -115,7 +115,37 @@ namespace appPrototipoISW.Vistas
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
+            ((DataTable)GridActividad.DataSource).Rows.Clear();
             MessageBox.Show("Se ha borrado el Dato con exito", "Borrar Dato", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            DataTable Tabla2 = new DataTable(); //Declaramos una variable de tipo DataTable y a su vez la inicializamos para usarla mas tarde. 
+            DataRow Renglon2;//Esta variable de tipo DataRow solo la declaramos y mas adelante la utilizaremos para agregarsela al dataTable que ya declaramos arriba 
+            //Le agregamos columnas a la variable Tabla que es de tipo DataTable 
+            Tabla2.Columns.Add(new DataColumn("Cedula"));
+            Tabla2.Columns.Add(new DataColumn("Nombre"));
+            Tabla2.Columns.Add(new DataColumn("Apellido1"));
+            Tabla2.Columns.Add(new DataColumn("Apellido2"));
+            Tabla2.Columns.Add(new DataColumn("Rol"));
+            Tabla2.Columns.Add(new DataColumn("Usuario"));
+            Tabla2.Columns.Add(new DataColumn("Clave"));
+            //Aqui es cuando hacemos uso de la variable renglon, la inicializamos diciendole que va a ser un nuevo renglon de la Tabla que es de tipo DataTable 
+            Renglon2 = Tabla2.NewRow();
+            //Aqui simplemente le agregamos el renglon nuevo con los valores que nosotros querramos, para hacer referencia a cada columna podemos utilizar los indices de cada columna 
+            Renglon2[0] = "206570898";
+            Renglon2[1] = "Lorenso";
+            Renglon2[2] = "Mata";
+            Renglon2[3] = "Monos";
+            Renglon2[4] = "Administrador";
+            Renglon2[5] = "lmata";
+            Renglon2[6] = "123";
+            //Aqui simplemente le agregamos el renglon nuevo a la tabla 
+            Tabla2.Rows.Add(Renglon2);
+            //Aqui le decimos al dataGridView que tome la tabla y la muestre y Fin 
+            GridActividad.DataSource = Tabla2;
+
         }
     }
 }
