@@ -130,5 +130,11 @@ namespace appPrototipoISW.Vistas
             FrmHistorial hist = new FrmHistorial();
             hist.ShowDialog();
         }
+
+        private void administrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios user = new FrmUsuarios();
+            user.ShowDialog();
+        }
     }
 }

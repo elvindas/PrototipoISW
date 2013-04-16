@@ -73,7 +73,6 @@ namespace appPrototipoISW.Vistas
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Se ha borrado el Dato con exito", "Borrar Dato", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -85,10 +84,12 @@ namespace appPrototipoISW.Vistas
         {
             MessageBox.Show("Insertó Dato con exito", "Inserta Dato", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.BoxActividad.Enabled = false;
-            this.TxtCodigo.Text = "";
-            this.CmbRaza.Text = "";
-            this.TxtNombre.Text = "";
-            this.CmbGenero.Text = "";
+            this.TxtCodigo.Text = null;
+            this.CmbRaza.Text = null;
+            this.TxtNombre.Text = null;
+            this.CmbGenero.Text = null;
+            madre.Text = null;
+            padre.Text = null;
             tollEmpleados.Enabled = true;
 
         }
@@ -96,10 +97,10 @@ namespace appPrototipoISW.Vistas
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             this.BoxActividad.Enabled = false;
-            this.TxtCodigo.Text = "";
-            this.CmbRaza.Text = "";
-            this.TxtNombre.Text = "";
-            this.CmbGenero.Text = "";
+            this.TxtCodigo.Text = null;
+            this.CmbRaza.Text = null;
+            this.TxtNombre.Text = null;
+            this.CmbGenero.Text = null;
             tollEmpleados.Enabled = true;
             TxtCodigo.Text = null;
             TxtNombre.Text = null;
@@ -115,10 +116,10 @@ namespace appPrototipoISW.Vistas
         {
             MessageBox.Show("Edito Dato con exito", "Editar Dato", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.BoxActividad.Enabled = false;
-            this.TxtCodigo.Text = "";
-            this.CmbRaza.Text = "";
-            this.TxtNombre.Text = "";
-            this.CmbGenero.Text = "";
+            this.TxtCodigo.Text = null;
+            this.CmbRaza.Text = null;
+            this.TxtNombre.Text = null;
+            this.CmbGenero.Text = null;
             tollEmpleados.Enabled = true;
             TxtCodigo.Text = null;
             TxtNombre.Text = null;
