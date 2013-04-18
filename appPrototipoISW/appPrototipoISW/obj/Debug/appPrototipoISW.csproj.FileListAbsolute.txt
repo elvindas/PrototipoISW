@@ -23,3 +23,4 @@ C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\ob
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.csproj.GenerateResource.Cache
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmHistorial.resources
 C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.Vistas.FrmUsuarios.resources
+C:\Users\Elnier\Documents\GitHub\PrototipoISW\appPrototipoISW\appPrototipoISW\obj\Debug\appPrototipoISW.csprojResolveAssemblyReference.cache

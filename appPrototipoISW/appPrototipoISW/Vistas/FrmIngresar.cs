@@ -19,7 +19,10 @@ namespace appPrototipoISW
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if ((this.txtContraseña.Text.ToString() == "123") || (this.txtUsuario.Text.ToString() == "lmata"))
+                this.Close();
+            else
+                MessageBox.Show("Nombre de usuario o contasrña incorrecta", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

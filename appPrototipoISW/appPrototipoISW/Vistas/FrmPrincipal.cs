@@ -51,6 +51,8 @@ namespace appPrototipoISW.Vistas
             textBox4.Text = "";
             groupBox3.Visible = false;
             button3.Enabled = false;
+            ((DataTable)GridActividad.DataSource).Rows.Clear();
+
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
